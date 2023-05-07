@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(#f0483a, #d10a20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 100px;
+}
+.main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.main header .logo {
+  max-width: 90px;
+}
+.main header .navigation {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.main header .navigation a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.main .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.main .content .text {
+  width: 100%;
+  max-width: 600px;
+  color: white;
+  font-size: 2rem;
+}
+.main .content .text h2 {
+  font-weight: 100;
+  font-size: 7rem;
+  margin: 15rem 0 1rem 0;
+}
+.main .content .text h2 span {
+  font-size: 7rem;
+  font-weight: 700;
+}
+.main .content .text p {
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+}
+.main .content .text .btn {
+  position: relative;
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: #fff;
+  border-radius: 13px;
+  text-decoration: none;
+  color: black;
+}
+.main .content-image {
+  position: relative;
+}
+.main .content-image img {
+  width: 100%;
+  max-width: 600px;
+}
+.main .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 30px 100px;
+}
+.main .footer .sci {
+  list-style: none;
+  color: white;
+  font-size: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.main .footer .sci li a {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding: 3px 10px;
+  }
+  .main .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .content .text {
+    text-align: center;
+  }
+  .main .content .text h2 {
+    margin-top: 12rem;
+  }
+  .main .footer {
+    padding: 3px 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */
